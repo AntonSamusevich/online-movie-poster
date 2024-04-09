@@ -7,24 +7,22 @@ function toggleTheme() {
     const body = document.body;
     body.classList.toggle('dark-mode');
     body.classList.toggle('light-mode');
-
     const isDarkMode = body.classList.contains('dark-mode');
     localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-
-    changeBackgroundVK();
-    changeBackgroundInst();
-    changeBackgroundFace();
-    changeBackgroundLink();
+    updateBackgrounds()
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme');
     const body = document.body;
     if (savedTheme === 'dark') {
+      body.classList.remove('light-mode');
       body.classList.add('dark-mode');
     } else {
       body.classList.remove('dark-mode');
+      body.classList.add('light-mode');
     }
+    updateBackgrounds()
 });
 
 function showSlide(index) {
@@ -185,4 +183,11 @@ function changeBackgroundLink(isHover) {
     } else {
         imgElement.src = 'svg/linkedin-white.svg'; 
     }
+}
+
+function updateBackgrounds() {
+    changeBackgroundVK();
+    changeBackgroundInst();
+    changeBackgroundFace();
+    changeBackgroundLink();
 }
