@@ -34,6 +34,14 @@ body {
   cursor: pointer;
 }
 
+.light-mode .theme-toggle {
+    background-color: black;
+}
+  
+.dark-mode .theme-toggle {
+    background-color: white;
+}
+
 .oval {
   width: 16px;
   height: 16px;
@@ -46,16 +54,16 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
+.light-mode .oval {
+    background-color: white;
+}
+
+.dark-mode .oval {
+    background-color: black;
+}
+
 .theme-toggle.dark .oval {
   transform: translateX(19px) translateY(-50%);
-}
-
-.theme-toggle.dark {
-  background-color: black;
-}
-
-.theme-toggle.dark .oval {
-  background-color: white;
 }
 
 header {
