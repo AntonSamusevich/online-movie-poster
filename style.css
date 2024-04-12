@@ -380,6 +380,12 @@ footer a {
     column-gap: 30px;
 }
 
+@media (max-width: 768px) {
+    header {
+        display: none;
+    }
+}
+
 @font-face {
     font-family: 'gilroy-bold';
     src: url('fonts/gilroy-bold.ttf') format('truetype');
