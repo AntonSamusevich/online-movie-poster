@@ -23,6 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
       body.classList.add('light-mode');
     }
     updateBackgrounds()
+
+    if (savedTheme === 'light') {
+        const themeToggle = document.querySelector('.theme-toggle');
+        themeToggle.classList.add('dark');
+        const oval = themeToggle.querySelector('.oval');
+        oval.classList.add('moved');
+    }
 });
 
 function showSlide(index) {
@@ -191,3 +198,14 @@ function updateBackgrounds() {
     changeBackgroundFace();
     changeBackgroundLink();
 }
+
+const menuCheckbox = document.getElementById('burger-checkbox');
+const body = document.body;
+
+menuCheckbox.addEventListener('change', function() {
+  if (this.checked) {
+    body.style.overflow = 'hidden';
+  } else {
+    body.style.overflow = 'auto';
+  }
+});
