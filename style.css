@@ -360,8 +360,7 @@ footer a {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 50px 0;
 }
 
 .copyright {
@@ -462,13 +461,13 @@ footer a {
 .menu-item {
   display: inline-block;
   color: white;
-  font-size: 16px;
+  font-size: 20px;
   text-decoration: none;
-  margin-bottom: 30px; 
+  margin-bottom: 40px; 
 }
 
 .items {
-    padding: 40px 0 40px 70px;
+    padding: 20px 0 40px 70px;
 }
 
 .burger-checkbox:checked ~ .menu-list {
@@ -506,6 +505,9 @@ footer a {
         align-items: flex-start;
         row-gap: 30px;
     }
+    .items {
+        padding: 40px 0 40px 70px;
+    }
 }
 
 @media (max-width: 380px) {
@@ -518,30 +520,27 @@ footer a {
     .theme-toggle {
         display: none;
     }
+    .slider-container {
+        display: none;
+    }
     .menu {
         display: block;
     }
-    footer h {
-        padding: 40px 0 0 0;
+    .card {
+        height: 438px;
+        min-width: 286px;
+        max-width: 286px;
     }
-    .slide img {
-        width: 99%;
-    }
-    .prev .next {
-        font-size: 25px;
+    .sections {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 60px 0 20px 0;
     }
     .sections a {
-        margin: 20px;
-        font-size: 25px;
-    }
-    .dot {
-        width: 8px;
-        height: 8px;
-    }
-    .card {
-        height: 408px;
-        min-width: 256px;
-        max-width: 256px;
+        margin: 0;
+        font-size: 26px;
     }
     .cards-container {
         display: flex;
@@ -549,6 +548,9 @@ footer a {
         align-items: center;
         padding: 40px 0;
         row-gap: 40px;
+    }
+    footer h {
+        padding: 40px 0 0 0;
     }
     .resources {
         display: grid;
@@ -567,6 +569,9 @@ footer a {
     }
     .social {
         padding-bottom: 40px;
+    }
+    .items {
+        padding: 20px 0 40px 70px;
     }
 }
 
