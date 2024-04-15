@@ -2,15 +2,15 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
     <title>Future&Cinema</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="script.js"></script>
     <div class="container">
         <header>
             <div class="logo">
-                <a href="">Future&Cinema</a>
+                <h href="">Future&Cinema</h>
             </div>
             <a href="afisha.html">афиша</a>
             <a href="premiere.html">премьеры</a>
@@ -20,6 +20,17 @@
             <div class="theme-toggle" onclick="toggleTheme()">
                 <div class="oval"></div>
             </div>
+            <div class="menu">
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label for="burger-checkbox" class="burger"></label>
+                <ul class="menu-list">
+                    <li><a href="#" class="menu-item">Афиша </a></li>
+                    <li><a href="#" class="menu-item">Премьеры</a></li>
+                    <li><a href="#" class="menu-item">Кинотеатры</a></li>
+                    <li><a href="#" class="menu-item">Кинотеатры</a></li>
+                    <li><a href="#" class="menu-item">Инфо</a></li>
+                </ul>
+            </div>            
         </header>
         <div class="slider-container">
             <div class="slider">
@@ -244,5 +255,6 @@
             </div>
         </footer>     
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
