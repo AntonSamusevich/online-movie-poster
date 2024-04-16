@@ -97,6 +97,10 @@ header a {
     color: black; 
 }
 
+.light-mode .items a {
+    color: white; 
+}
+
 header a:hover {
     color: gray;
 }
@@ -215,12 +219,11 @@ header a:hover {
 }
 
 .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     row-gap: 80px;
-    padding: 80px 80px
+    padding: 80px 0;
 }
 
 .card {
@@ -436,12 +439,14 @@ footer a {
   transform: rotate(45deg);
   box-shadow: 0 6px 0 rgba(255, 255, 255, 0); 
   transition: box-shadow .15s, top .3s, transform .3s .15s;
+  background: white;
 }
 
 .burger-checkbox:checked + .burger::after {
   bottom: 11px;
   transform: rotate(-45deg);
   transition: bottom .3s, transform .3s .15s;
+  background: white;
 }
 
 .menu-list {
@@ -463,7 +468,7 @@ footer a {
   color: white;
   font-size: 20px;
   text-decoration: none;
-  margin-bottom: 40px; 
+  margin-bottom: 80px; 
 }
 
 .items {
@@ -485,13 +490,27 @@ footer a {
     .menu {
         display: block;
     }
+    .sections {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 50px;
+        padding: 70px 0 20px 0;
+    }
+    .sections a {
+        margin: 0;
+    }
     .card {
         height: 408px;
         min-width: 256px;
         max-width: 256px;
     }
     .cards-container {
-        padding: 70px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        padding: 70px 0;
         row-gap: 70px;
     }
     .resources {
@@ -506,7 +525,10 @@ footer a {
         row-gap: 30px;
     }
     .items {
-        padding: 40px 0 40px 70px;
+        padding: 70px 0 40px 70px;
+    }
+    .menu-list .theme-toggle {
+        display: block;
     }
 }
 
@@ -526,11 +548,6 @@ footer a {
     .menu {
         display: block;
     }
-    .card {
-        height: 438px;
-        min-width: 286px;
-        max-width: 286px;
-    }
     .sections {
         display: flex;
         flex-direction: row;
@@ -542,8 +559,14 @@ footer a {
         margin: 0;
         font-size: 26px;
     }
+    .card {
+        height: 438px;
+        min-width: 286px;
+        max-width: 286px;
+    }
     .cards-container {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 40px 0;
@@ -555,7 +578,6 @@ footer a {
     .resources {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 70px;
         padding-bottom: 40px;
     }
     .contacts {
@@ -571,7 +593,13 @@ footer a {
         padding-bottom: 40px;
     }
     .items {
-        padding: 20px 0 40px 70px;
+        padding: 50px 0 40px 70px;
+    }
+    .menu-item {
+        margin-bottom: 60px; 
+    }
+    .menu-list .theme-toggle {
+        display: block;
     }
 }
 
