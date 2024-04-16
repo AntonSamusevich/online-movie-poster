@@ -4,6 +4,8 @@ let autoSlideInterval;
 function toggleTheme() {
     const themeToggle = document.querySelector('.theme-toggle');
     themeToggle.classList.toggle('dark');
+    const oval = document.querySelector('.menu .theme-toggle');
+    oval.classList.toggle('dark');
     const body = document.body;
     body.classList.toggle('dark-mode');
     body.classList.toggle('light-mode');
