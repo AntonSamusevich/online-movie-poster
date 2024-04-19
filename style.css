@@ -94,6 +94,10 @@ header a {
     color: white;
 }
 
+.light-mode .logo h {
+    color: black; 
+}
+
 .light-mode header a {
     color: black; 
 }
