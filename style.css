@@ -15,6 +15,8 @@ body {
 
 .body {
     padding: 0 20px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .dark-mode {
@@ -69,9 +71,6 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 40px 20px;
     top: 0px;
     left: 0;
@@ -80,6 +79,14 @@ header {
     position: sticky;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+.text {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .light-mode header {
