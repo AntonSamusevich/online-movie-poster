@@ -1,7 +1,38 @@
 let currentSlide = 1;
 let autoSlideInterval;  
 
+function toggleTheme() {
+    const themeToggle = document.querySelector('.theme-toggle');
+    themeToggle.classList.toggle('dark');
+    const oval = document.querySelector('.menu .theme-toggle');
+    oval.classList.toggle('dark');
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+    body.classList.toggle('light-mode');
+    const isDarkMode = body.classList.contains('dark-mode');
+    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+    updateBackgrounds()
+}
 
+document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme');
+    const body = document.body;
+    if (savedTheme === 'dark') {
+      body.classList.remove('light-mode');
+      body.classList.add('dark-mode');
+    } else {
+      body.classList.remove('dark-mode');
+      body.classList.add('light-mode');
+    }
+    updateBackgrounds()
+
+    if (savedTheme === 'light') {
+        const themeToggle = document.querySelector('.theme-toggle');
+        themeToggle.classList.add('dark');
+        const oval = themeToggle.querySelector('.oval');
+        oval.classList.add('moved');
+    }
+});
 
 function showSlide(index) {
     const slides = document.querySelector('.slider');
