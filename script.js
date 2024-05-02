@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+
 function showSlide(index) {
     const slides = document.querySelector('.slider');
     const totalSlides = slides.children.length;
@@ -98,6 +99,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
     resetAutoSlide(); 
     updateDots();
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const dotsContainer = document.querySelector('.slider-dots');
+    const dots = Array.from(dotsContainer.children);
+    
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', function() {
+            currentSlide = index + 1; 
+            showSlide(0); 
+            resetAutoSlide();
+
+            dots.forEach((dot) => {
+                dot.classList.remove('active-dot');
+            });
+
+            dot.classList.add('active-dot');
+        });
+    });
 });
 
 function showContent(tab) {
