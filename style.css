@@ -500,7 +500,7 @@ footer a {
 
 @media (max-width: 768px) {
     header {
-        padding: 35px 20px;
+        padding: 30px 20px;
     }
     header a {
         display: none;
@@ -520,7 +520,7 @@ footer a {
         justify-content: flex-start;
         align-items: center;
         column-gap: 50px;
-        padding: 80px 0 20px 0;
+        padding: 100px 0 20px 0;
     }
     .sections a {
         margin: 0;
@@ -584,7 +584,7 @@ footer a {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        padding: 60px 0 20px 0;
+        padding: 60px 0 10px 0;
     }
     .sections a {
         margin: 0;
