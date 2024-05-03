@@ -479,6 +479,7 @@ footer a {
   transition: transform 0.3s ease;
   width: 100vw;
   height: 100vh;
+  overflow: auto;
 }
 
 .menu-item {
