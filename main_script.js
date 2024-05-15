@@ -119,44 +119,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-function showContent(tab) {
-    const nowPlayingCards = document.querySelectorAll('.now-playing');
-    const comingSoonCards = document.querySelectorAll('.coming-soon');
-    const nowLink = document.getElementById('nowLink');
-    const soonLink = document.getElementById('soonLink');
-
-    if (tab === 'now') {
-        nowPlayingCards.forEach(card => card.style.display = 'flex');
-        comingSoonCards.forEach(card => card.style.display = 'none');
-        nowLink.classList.add('active');
-        soonLink.classList.remove('active');
-    } else if (tab === 'soon') {
-        nowPlayingCards.forEach(card => card.style.display = 'none');
-        comingSoonCards.forEach(card => card.style.display = 'flex');
-        nowLink.classList.remove('active');
-        soonLink.classList.add('active');
-    }
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-    const nowLink = document.getElementById('nowLink');
-    const soonLink = document.getElementById('soonLink');
-
-    nowLink.addEventListener('click', function (event) {
-      event.preventDefault();
-      showContent('now');
-    });
-
-    soonLink.addEventListener('click', function (event) {
-      event.preventDefault();
-      showContent('soon');
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    showContent('now');
-});
-
 function changeBackgroundVK(isHover) {
     var imgElement = document.getElementById('vk');
     var isLightMode = document.body.classList.contains('light-mode');
