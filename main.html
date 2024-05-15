@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Future&Cinema</title>
+    <link rel="stylesheet" href="main_style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="text">
+          <div class="logo">
+            <a href ="main.html">Future&Cinema</a>
+          </div>
+          <a href="afisha.html">афиша</a>
+          <a href="cinemas.html">кинотеатры</a>
+          <a href="contacts.html">контакты</a>
+          <a href="info.html">инфо</a>
+          <div class="theme-toggle" onclick="toggleTheme()">
+            <div class="oval"></div>
+          </div>
+          <div class="menu">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+            <div class="menu-list">
+              <div class="items">
+                <a href="afisha.html" class="menu-item">Афиша </a><br>
+                <a href="cinemas.html" class="menu-item">Кинотеатры</a><br>
+                <a href="contacts.html" class="menu-item">Контакты</a><br>
+                <a href="info.html" class="menu-item">Инфо</a><br>
+                <div class="theme-toggle" onclick="toggleTheme()">
+                  <div class="oval"></div>
+                </div>
+              </div>
+            </div>
+          </div>   
+        </div>         
+      </header>
+      <div class="body">
+        <div class="slider-container">
+          <div class="slider" id ="slider">
+            <div class="slide"><img src="images/image1.jpg" alt="Slide 1"></div>
+            <div class="slide"><img src="images/image2.png" alt="Slide 2"></div>
+            <div class="slide"><img src="images/image3.jpg" alt="Slide 3"></div>
+            <div class="slide"><img src="images/image4.jpg" alt="Slide 4"></div>
+            <div class="slide"><img src="images/image5.jpg" alt="Slide 5"></div>
+          </div>
+          <div class="prev" onclick="changeSlide(-1)">&#10094;</div>
+          <div class="next" onclick="changeSlide(1)">&#10095;</div>
+          <div class="slider-dots">
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="cards-container" id="cards">
+          <div class="card">
+            <img src="images/image6.jpeg" alt="Movie 1">
+            <div class="overlay">
+              <h3>Неудержимые</h3>
+              <p>Боевик/Триллер</p>
+              <p>1 ч 43 мин</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/image7.jpg" alt="Movie 2">
+            <div class="overlay">
+              <h3>Паркер</h3>
+              <p>Боевик/Криминал</p>
+              <p>1 ч 58 мин</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/image8.jpg" alt="Movie 3">
+            <div class="overlay">
+              <h3>Перевозчик</h3>
+              <p>Боевик/Криминал</p>
+              <p>1 ч 32 мин</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/image9.jpg" alt="Movie 4">
+            <div class="overlay">
+              <h3>Последний рубеж</h3>
+              <p>Боевик/Триллер</p>
+              <p>1 ч 40 мин</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/image10.jpg" alt="Movie 5">
+            <div class="overlay">
+              <h3>Ограбление по-итальянски</h3>
+              <p>Боевик/Криминал</p>
+              <p>1 ч 51 мин</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/image11.jpg" alt="Movie 6">
+            <div class="overlay">
+              <h3>Защитник</h3>
+              <p>Боевик/Триллер</p>
+              <p>1 ч 34 мин</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/image12.jpg" alt="Movie 7">
+            <div class="overlay">
+              <h3>Адреналин 2: Высокое напряжение</h3>
+              <p>Боевик/Криминал</p>
+              <p>1 ч 36 мин</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/image13.jpg" alt="Movie 8">
+            <div class="overlay">
+              <h3>Смертельная гонка</h3>
+              <p>Боевик/Триллер</p>
+              <p>1 ч 51 мин</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/image14.jpg" alt="Movie 9">
+            <div class="overlay">
+              <h3>Без компромиссов</h3>
+              <p>Триллер/Криминал</p>
+              <p>1 ч 37 мин</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/image15.jpg" alt="Movie 10">
+            <div class="overlay">
+              <h3>Пчеловод</h3>
+              <p>Боевик/Триллер</p>
+              <p>1 ч 45 мин</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/image16.jpg" alt="Movie 11">
+            <div class="overlay">
+              <h3>Механик: Воскрешение</h3>
+              <p>Боевик/Триллер</p>
+              <p>1 ч 38 мин</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/image17.jpg" alt="Movie 12">
+            <div class="overlay">
+              <h3>Мег 2: Бездна</h3>
+              <p>Боевик/Научная фантастика</p>
+              <p>1 ч 56 мин</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/image18.jpg" alt="Movie 13">
+            <div class="overlay">
+              <h3>Гнев человеческий</h3>
+              <p>Боевик/Криминал</p>
+              <p>1 ч 58 мин</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/image19.jpg" alt="Movie 14">
+            <div class="overlay">
+              <h3>Форсаж: Хоббс и Шоу</h3>
+              <p>Боевик/Приключения</p>
+              <p>2 ч 16 мин</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/image20.jpeg" alt="Movie 15">
+            <div class="overlay">
+              <h3>Операция «Фортуна»</h3>
+              <p>Боевик/Комедия</p>
+              <p>1 ч 54 мин</p>
+            </div>
+          </div>        
+        </div>         
+        <footer>
+          <div class="resources">
+            <div class="main">
+              <h3>Главная</h3>
+              <a href="#slider">Слайдер</a>
+              <a href="#cards">В прокате</a>
+            </div>
+            <div class="afisha">
+              <h3>Афиша</h3>
+              <a href="afisha.html">Сейчас в кино</a>
+              <a href="afisha.html">Скоро</a>
+            </div>
+            <div class="cinemas">
+              <h3>Кинотеатры</h3>
+              <a href="cinemas.html">Локации</a>
+              <a href="cinemas.html">Расписание</a>
+            </div>
+            <div class="contact">
+              <h3>Контакты</h3>
+              <a href="contacts.html">Адрес</a>
+              <a href="contacts.html">Телефон</a>
+            </div>
+            <div class="info">
+              <h3>Информация</h3>
+              <a href="info.html">О нас</a>
+              <a href="info.html">Новости</a>
+            </div>
+          </div>
+          <div class="contacts">
+            <div class="copyright">
+              <h1>Future&Cinema</h1>
+              <h2>&copy; 2024 Future&Cinema. Все права защищены</h2>
+            </div>
+            <div class="social">
+              <a href="https://vk.com">
+                <img id="vk" src="svg/vk-white.svg" width="40" height="40" alt="vk" onmouseover="changeBackgroundVK(true)" onmouseout="changeBackgroundVK(false)">
+              </a>
+              <a href="https://www.instagram.com">
+                <img id="instagram" src="svg/instagram-white.svg" width="40" height="40" alt="instagram" onmouseover="changeBackgroundInst(true)" onmouseout="changeBackgroundInst(false)">
+              </a>
+              <a href="https://www.facebook.com/">
+                <img id="facebook" src="svg/facebook-white.svg" width="40" height="40" alt="facebook" onmouseover="changeBackgroundFace(true)" onmouseout="changeBackgroundFace(false)">
+              </a>
+              <a href="https://ru.linkedin.com/">
+                <img id="linkedin" src="svg/linkedin-white.svg" width="40" height="40" alt="linkedin" onmouseover="changeBackgroundLink(true)" onmouseout="changeBackgroundLink(false)">
+              </a>
+            </div>                
+          </div>
+        </footer>  
+      </div>   
+    </div>
+    <script src="main_script.js"></script>
+  </body>
+</html>
