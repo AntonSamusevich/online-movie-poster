@@ -100,7 +100,7 @@ header a {
     font-family: 'gilroy-bold', sans-serif;
 }
 
-.logo h {
+.logo h1 {
     font-size: 26px;
     font-family: 'gilroy-regular', sans-serif;
     font-weight: 700;
@@ -298,12 +298,13 @@ footer {
     line-height: 1;
 }
 
-footer h {
+footer h3 {
     color: gray;
     font-size: 16px;
     font-family: 'gilroy-bold', sans-serif;
     padding-top: 60px;
     padding-bottom: 10px;
+    margin: 0;
 }
 
 footer h1 {
@@ -562,7 +563,7 @@ footer a {
         padding: 60px 0;
         row-gap: 60px;
     }
-    footer h {
+    footer h3 {
         padding-top: 50px;
     }
     .resources {
@@ -636,7 +637,7 @@ footer a {
         padding: 40px 0;
         row-gap: 40px;
     }
-    footer h {
+    footer h3 {
         padding: 40px 0 0 0;
     }
     .resources {
