@@ -100,14 +100,14 @@ header a {
     font-family: 'gilroy-bold', sans-serif;
 }
 
-.logo h1 {
+.logo a {
     font-size: 26px;
     font-family: 'gilroy-regular', sans-serif;
     font-weight: 700;
     color: white;
 }
 
-.light-mode .logo h1 {
+.light-mode .logo a {
     color: black; 
 }
 
@@ -156,7 +156,7 @@ header a:hover {
 .prev,
 .next {
     position: absolute;
-    top: 53%;
+    top: 45%;
     font-size: 36px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
@@ -194,7 +194,7 @@ header a:hover {
 .slider-dots {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin: 20px 0 80px 0;
 }
 
 .dot {
@@ -214,34 +214,13 @@ header a:hover {
     background-color: black;
 }
 
-.sections {
-    padding-top: 100px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid gray;
-}
-
-.sections a {
-    color: gray;
-    text-decoration: none;
-    font-size: 30px;
-    font-family: 'gilroy-bold', sans-serif;
-    margin: 40px;
-}
-
-.sections a.active {
-    color: white; 
-}
-
-.light-mode .sections a.active {
-    color: black; 
-}
-
 .cards-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(0px, 1fr));
     justify-items: center;
     row-gap: 80px;
     padding: 80px 0;
+    border-top: 1px solid gray;
 }
 
 .card {
@@ -347,13 +326,13 @@ footer a {
     border-bottom: 1px solid gray;
 }
 
-.afisha {
+.main {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.premiere {
+.afisha {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -531,6 +510,9 @@ footer a {
     header a {
         display: none;
     }
+    header .logo a{
+        display: block;
+    }
     .theme-toggle {
         display: none;
     }
@@ -599,7 +581,7 @@ footer a {
 
 @media (max-width: 500px) {
     header {
-        padding: 20px 20px;
+        padding: 20px 20px 60px 20px;
     }
     header a {
         display: none;
