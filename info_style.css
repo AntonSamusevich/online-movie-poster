@@ -121,7 +121,7 @@ p {
     font-size: 18px;
     font-family: 'gilroy-regular', sans-serif;
     margin: 0;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
     text-align: justify;
 }
 
@@ -537,6 +537,9 @@ footer a {
         height: 383px; 
         min-width: 231px;
         max-width: 231px; 
+    }
+    p {
+        padding-bottom: 40px;
     }
 }
 
