@@ -632,6 +632,9 @@ footer a {
     .menu {
         display: block;
     }
+    body .name h1 {
+        padding: 20px 0 40px 0;
+    }
     .sections {
         display: flex;
         flex-direction: row;
