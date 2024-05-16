@@ -410,7 +410,7 @@ footer a {
         display: flex;
         flex-direction: column;
         row-gap: 30px;
-        padding: 30px 0;
+        padding: 40px 0;
     }
     .left {
         display: flex;
@@ -592,6 +592,10 @@ footer a {
         height: 438px;
         min-width: 286px;
         max-width: 286px;
+    }
+    article img {
+        width: 300px;
+        height: 200px;
     }
 }
 
