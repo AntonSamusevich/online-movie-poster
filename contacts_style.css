@@ -428,9 +428,6 @@ footer a {
     body h2 {
         font-size: 20px;
     }
-    body h3 {
-        padding-bottom: 40px;
-    }
 }
 
 @media (max-width: 768px) {
