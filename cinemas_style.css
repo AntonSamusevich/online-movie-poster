@@ -285,6 +285,10 @@ footer a {
     font-family: 'gilroy-regular', sans-serif;
 }
 
+.copyright h2 {
+    padding: 0;
+}
+
 .social {
     display: flex;
     flex-direction: row;
